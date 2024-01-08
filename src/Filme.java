@@ -3,8 +3,10 @@ public class Filme {
     String nome;
     int anoDeLancamento;
     boolean incluidonoPlano;
-    double somaDasAvaliacoes;
-    int totalDeAvaliacoes;
+
+    // privando/encapsulando o atributo ( o atributo nao pode ser nem lido nem reescrito fora da classe)
+    private double somaDasAvaliacoes;
+    private int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
     //métodos
@@ -19,8 +21,13 @@ public class Filme {
         totalDeAvaliacoes++;
     }
     //métodos com retorno utiliza o tipo de dado que o metodo vai retornar
-    double pegaMedia() {
+    double pegaMedia(){
         return somaDasAvaliacoes/totalDeAvaliacoes;
+    }
+
+    // getter para pegar valor do atributo privado
+    int getTotalDeAvaliacoes(){
+        return totalDeAvaliacoes;
     }
 
 }
