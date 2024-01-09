@@ -1,3 +1,5 @@
+package cursoUm;
+
 import java.util.Scanner;
 
 public class OutroLoop {

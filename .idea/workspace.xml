@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a14d3990-943f-4b6c-8aca-5b17f592dcf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculos/Classificavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculos/FiltroRecomendacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Episodio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desafioCursoDois/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desafioCursoDois/Ficha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desafioCursoDois/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desafioCursoDois/Musica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desafioCursoDois/Podcast.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Condicional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursoUm/Condicional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesafioCursoUm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursoUm/DesafioCursoUm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JogoAdivinhacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursoUm/JogoAdivinhacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Letura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursoUm/Letura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursoUm/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OutroLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursoUm/OutroLoop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,30 +61,36 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Principal">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="DesafioCursoUm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DesafioCursoUm" />
+      <option name="MAIN_CLASS_NAME" value="cursoUm.DesafioCursoUm" />
       <module name="catalogo-filmes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="JogoAdivinhacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JogoAdivinhacao" />
+      <option name="MAIN_CLASS_NAME" value="cursoUm.JogoAdivinhacao" />
       <module name="catalogo-filmes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Loop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Loop" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="desafioCursoDois.Main" />
       <module name="catalogo-filmes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafioCursoDois.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="OutroLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OutroLoop" />
+      <option name="MAIN_CLASS_NAME" value="cursoUm.OutroLoop" />
       <module name="catalogo-filmes" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.DesafioCursoUm" />
         <item itemvalue="Application.JogoAdivinhacao" />
         <item itemvalue="Application.OutroLoop" />
-        <item itemvalue="Application.Loop" />
       </list>
     </recent_temporary>
   </component>
