@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -46,7 +48,24 @@ public class Principal {
         episodio.setTotalVizualizacoes(400);
         filtro.filtra(episodio);
 
+        // trabalhando com arrayList
+        Filme filmeUm = new Filme();
+        filmeUm.setNome("A fantastica fabrica de chocolates");
+        filmeUm.setDuracaoEmMinutos(160);
+        filmeUm.setAnoDeLancamento(2008);
 
+        var filmeDois = new Filme();
+        filmeDois.setNome("Viva a vida é uma festa");
+        filmeDois.setDuracaoEmMinutos(160);
+        filmeDois.setAnoDeLancamento(2015);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeUm);
+        listaDeFilmes.add(filmeDois);
+        listaDeFilmes.add(meuFilme);
+        System.out.println("O tamanho da lista de filmes é " + listaDeFilmes.size());
+        System.out.println("O primeiro filme da lista é " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
     }
 }
 

@@ -20,4 +20,10 @@ public class Filme extends Titulo implements Classificavel {
     public int getClassificacao() {
         return (int) pegaMedia()/ 2;
     }
+
+    // Todas as classes herdam da classe Object entao vamos reescrever o método toSting() da object
+    @Override
+    public String toString() {
+        return "Filme : " + this.getNome() + " (" + this.getAnoDeLancamento() + ")";
+    }
 }
