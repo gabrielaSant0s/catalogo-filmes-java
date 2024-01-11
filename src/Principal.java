@@ -8,9 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O Poderoso Chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        Filme meuFilme = new Filme("O Poderoso Chefão",1970);
         meuFilme.setDuracaoEmMinutos(180);
 
         meuFilme.exibeFichaTecnica();
@@ -22,9 +20,7 @@ public class Principal {
         System.out.println(meuFilme.pegaMedia());
         System.out.println("Duração Filme: " + meuFilme.getDuracaoEmMinutos());
 
-        Serie serie = new Serie();
-        serie.setNome("Lost");
-        serie.setAnoDeLancamento(2000);
+        Serie serie = new Serie("Lost",2000);
         serie.setTemporadas(10);
         serie.setEpisodiosPorTemporada(22);
         serie.setMinutosPorEpisodio(25);
@@ -49,15 +45,12 @@ public class Principal {
         filtro.filtra(episodio);
 
         // trabalhando com arrayList
-        Filme filmeUm = new Filme();
-        filmeUm.setNome("A fantastica fabrica de chocolates");
+        Filme filmeUm = new Filme("A fantastica fabrica de chocolates",2008);
         filmeUm.setDuracaoEmMinutos(160);
-        filmeUm.setAnoDeLancamento(2008);
 
-        var filmeDois = new Filme();
-        filmeDois.setNome("Viva a vida é uma festa");
+
+        var filmeDois = new Filme("Viva a vida é uma festa",2015);
         filmeDois.setDuracaoEmMinutos(160);
-        filmeDois.setAnoDeLancamento(2015);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
         listaDeFilmes.add(filmeUm);
@@ -66,6 +59,9 @@ public class Principal {
         System.out.println("O tamanho da lista de filmes é " + listaDeFilmes.size());
         System.out.println("O primeiro filme da lista é " + listaDeFilmes.get(0).getNome());
         System.out.println(listaDeFilmes);
+
+        Filme filmeComConstrutor = new Filme("Dogville",2000);
+        System.out.println(filmeComConstrutor.getNome());
     }
 }
 
