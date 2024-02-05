@@ -5,6 +5,9 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -34,6 +37,26 @@ public class PrincipalComListas {
                 System.out.println("CLassificação: " + filme.getClassificacao());
             }
         }
+
+        ArrayList <String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Bruna Marquezine");
+        buscaPorArtista.add("Vitão");
+        buscaPorArtista.add("Ana Caetano");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação");
+        System.out.println(buscaPorArtista);
+
+        // Comparable
+        System.out.println("Lista de Assistidos Ordenados");
+        Collections.sort(listaDeAssistidos);
+        System.out.println(listaDeAssistidos);
+
+        // Comparator (moderno)
+        listaDeAssistidos.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordenando por ano");
+        System.out.println(listaDeAssistidos);
 
     }
 }
