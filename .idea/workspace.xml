@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a14d3990-943f-4b6c-8aca-5b17f592dcf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/desafioCursoTres/Compras.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/desafioCursoTres/PrincipalCompras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalComBusca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +43,7 @@
     "Application.Main.executor": "Run",
     "Application.OutroLoop.executor": "Run",
     "Application.Principal.executor": "Run",
+    "Application.PrincipalComBusca.executor": "Run",
     "Application.PrincipalComListas.executor": "Run",
     "Application.PrincipalCompras.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -54,14 +54,7 @@
     "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PrincipalCompras">
-    <configuration name="DesafioCursoUm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cursoUm.DesafioCursoUm" />
-      <module name="catalogo-filmes" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.PrincipalComBusca">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="desafioCursoDois.Main" />
       <module name="catalogo-filmes" />
@@ -78,6 +71,19 @@
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.Principal" />
       <module name="catalogo-filmes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrincipalComBusca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.PrincipalComBusca" />
+      <module name="catalogo-filmes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.screenmatch.principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrincipalComBusca" />
         <item itemvalue="Application.PrincipalCompras" />
         <item itemvalue="Application.PrincipalComListas" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.DesafioCursoUm" />
       </list>
     </recent_temporary>
   </component>
