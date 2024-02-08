@@ -1,5 +1,8 @@
 package br.com.alura.screenmatch.principal;
 
+import br.com.alura.screenmatch.modelos.Titulo;
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -20,8 +23,18 @@ public class PrincipalComBusca {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
                 .build();
-        HttpResponse response = client
+        HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(response.body());
+
+        String json = response.body();
+        System.out.println(json);
+
+        // Buscar bibliotecas java https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin
+        // para desserializar o json vamos usar o GSON
+        // fiz o download do gson via jar
+        // Para fazer ele funcionar vamos em file->Project Structure ->Project Sttings -> Modules -> Dependencies e add esse arquivo .jar
+        Gson gson = new Gson();
+        Titulo meuTitulo = gson.fromJson(json, Titulo.class);
+        System.out.println(meuTitulo);
     }
 }
